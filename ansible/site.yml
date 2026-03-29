@@ -13,4 +13,10 @@
   become: true
   roles:
     - prometheus
+
+- name: Configure Node Exporter
+  hosts: _node_exporter
+  become: true
+  roles:
+    - node_exporter
  
