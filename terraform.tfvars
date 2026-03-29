@@ -16,7 +16,7 @@ instances = {
   }
 
    vm-3 = {
-    server_name = "node-exporter3"
+    server_name = "node-exporter2"
     role        = "node_exporter"
     environment = "dev"
     team        = "devops"
