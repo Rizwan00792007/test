@@ -1,0 +1,14 @@
+[Unit]
+Description=Node Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User={{ node_exporter_user | default('node_exporter') }}
+Group={{ node_exporter_user | default('node_exporter') }}
+Type=simple
+ExecStart={{ node_exporter_bin_path | default('/usr/local/bin/node_exporter') }} \
+  --web.listen-address=:{{ node_exporter_port | default('9100') }}
+
+[Install]
+WantedBy=multi-user.target
