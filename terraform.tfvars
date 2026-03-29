@@ -15,4 +15,17 @@ instances = {
     team        = "devops"
   }
 
+   vm-3 = {
+    server_name = "node-exporter3"
+    role        = "node_exporter"
+    environment = "dev"
+    team        = "devops"
+  }
+  vm-4 = {
+    server_name = "docker-node"
+    role        = "docker-node"
+    environment = "dev"
+    team        = "devops"
+  }
+
 }
