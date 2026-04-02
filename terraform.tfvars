@@ -1,5 +1,5 @@
 ami_type = "ami-09e973f123c32cf86"
-ec2_type = "t2.micro"
+ec2_type = "t3.medium"
 instances = {
   vm-1 = {
     server_name = "prometheus-server"
